@@ -4,12 +4,6 @@ body {
   box-sizing: border-box;
 }
 
-.active {
-  opacity: 0;
-  z-index: -1;
-  pointer-events: none;
-}
-
 .background {
   display: flex;
   align-items: center;
@@ -22,6 +16,12 @@ body {
 .background__img {
   width: 100vh;
   height: 100vh;
+}
+
+.active {
+  opacity: 0;
+  background-color: transparent;
+  pointer-events: none;
 }
 
 .ball {
