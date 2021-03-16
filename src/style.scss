@@ -18,12 +18,6 @@ body {
   height: 100vh;
 }
 
-.active {
-  opacity: 0;
-  background-color: transparent;
-  pointer-events: none;
-}
-
 .ball {
   position: fixed;
   display: grid;
@@ -33,31 +27,31 @@ body {
 
 .level__one {
   position: fixed;
-  display: flex;
-  width: 100vh;
-  height: 100vh;
-  z-index: 100;
-  background-color: red;
-  border-radius: 100%;
-}
-
-.level__two__group {
-  position: fixed;
   display: grid;
   width: 100vh;
   height: 100vh;
-  z-index: -1;
   grid-template-columns: 50% 50%;
+  background-color: red;
   border-radius: 100%;
+
+  &.active {
+    background-color: transparent;
+    z-index: -1;
+  }
 }
 
 .level__two {
-  display: flex;
+  display: grid;
   width: 100%;
   height: 100%;
-  z-index: 99;
+  grid-template-columns: 50% 50%;
   background-color: blue;
   border-radius: 100%;
+
+  &.active {
+    background-color: transparent;
+    z-index: -1;
+  }
 }
 
 .level__three__group {
@@ -67,14 +61,12 @@ body {
   height: 100vh;
   z-index: -1;
   grid-template-columns: 50% 50%;
-  border-radius: 100%;
 }
 
 .three {
   display: grid;
   width: 50vh;
   height: 50vh;
-  z-index: -1;
   grid-template-columns: 50% 50%;
 }
 
@@ -82,7 +74,11 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  z-index: 98;
   background-color: blue;
   border-radius: 100%;
+
+  &.active {
+    background-color: transparent;
+    z-index: -1;
+  }
 }
