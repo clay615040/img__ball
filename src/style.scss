@@ -25,26 +25,12 @@ body {
   height: 100vh;
 }
 
-.level__one {
+.extremely {
   position: fixed;
   display: grid;
   width: 100vh;
   height: 100vh;
   grid-template-columns: 50% 50%;
-  background-color: red;
-  border-radius: 100%;
-
-  &.active {
-    background-color: transparent;
-    z-index: -1;
-  }
-}
-
-.level__two {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  grid-template-columns: 50% 50%;
   background-color: blue;
   border-radius: 100%;
 
@@ -54,24 +40,11 @@ body {
   }
 }
 
-.level__three {
+.ball__bg {
   display: grid;
   width: 100%;
   height: 100%;
   grid-template-columns: 50% 50%;
-  background-color: blue;
-  border-radius: 100%;
-
-  &.active {
-    background-color: transparent;
-    z-index: -1;
-  }
-}
-
-.level__four {
-  display: flex;
-  width: 100%;
-  height: 100%;
   background-color: blue;
   border-radius: 100%;
 
